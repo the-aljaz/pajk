@@ -3,7 +3,6 @@ file = file[file.find("<path"):file.find("/>")]
 file = file[file.find('"')+1:]
 file = file[file.find('="')+2:file.find('z')]
 file = file.strip()
-
 coordstr=""
 for i in file:
 	if i == "-":
@@ -22,7 +21,7 @@ for i in  coordstr:
 		temp = i
 	else:
 		temp += i
-
+sez.append(temp)
 sez.remove("")
 
 finalcoords = []
